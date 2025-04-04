@@ -25,3 +25,6 @@ async def create_user(user: UserBase, db: Session = Depends(get_db)):
 async def get_user(db: Session = Depends(get_db)):
     users = db.query(DBUser).all()
     return users
+
+# if __name__ == "__main__":
+#     run('app:app', reload=True)

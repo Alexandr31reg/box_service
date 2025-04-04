@@ -18,7 +18,7 @@ class User(Base):
     
 
 # Подключаемся к базе данных SQLite
-engine = create_engine('sqlite:///./db.sqlite')
+engine = create_engine('sqlite:///db.sqlite')
 
 # Создаем таблицы, если они ещё не существуют
 Base.metadata.create_all(engine)
